@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,400&display=swap');
+
+body {
+    background: linear-gradient(to left, #0b1328, #122041, #0e1a36);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+#form h1 {
+    text-align: center;
+}
+
+.container {
+    max-width:400px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: azure;
+    border-radius: 3px;
+    font-size: 16px;
+    color: black;
+}
+
+
+
+
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="email"],
+.container input[type="date"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid ;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.clear {
+
+    color: black;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.submit {
+    background-color:  #122041;
+    color: azure;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+}
+
+.ok {
+    background-color:  #122041;
+    color: azure;
+    padding: 10px;
+    margin-top: 10px;
+    width: 50%;
+    border: none;
+    border-radius: 3px;
+}
+
+.show-password{
+
+    display: flex;
+    align-items: left;
+    padding: 5px;
+    margin-bottom: 15px;
+
+}
+
+
+.box input:focus{
+    outline: 0;
+}
+
+.box.success input{
+    border-color: rgb(1, 197, 76);
+}
+
+.box.error input{
+    border-color: rgb(222, 6, 49);
+}
+
+.box .error{
+    color:rgb(222, 6, 49);
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+  }
+  
+  #success-message {
+    display: block;
+    background-color: azure;
+    padding: 30px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: rgb(1, 197, 76);
+  }
+  
+
+.blur {
+    filter: blur(5px);
+}

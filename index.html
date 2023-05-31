@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz z walidacją</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <main>
+      <div class="container">
+        <form id="form" action="">
+          <h1>Formularz z walidacją</h1>
+                <div class="box">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter..." >
+                    <p class="error"></p>
+                </div>
+
+                <div class="box">
+                    <label for="surname">Surname</label>
+                    <input type="text" name="surname" id="surname" placeholder="Enter...">
+                    <p class="error"></p>
+                </div>
+
+
+                  <div class="box">
+                    <label for="birthday">Birthday</label>
+                    <input type="date" name="birthday" id="birthday">
+                    <p class="error"></p>
+                </div>
+
+                <div class="box">
+                  <label for="username">Username</label>
+                  <input type="text" name="username" id="username" placeholder="5-20 characters..." >
+                  <p class="error"></p>
+              </div>
+
+                <div class="box">
+                  <label for="email">E-mail</label>
+                  <input type="email" name="email" id="email" placeholder="Enter..." >
+                  <p class="error"></p>
+                </div>
+
+                <div class="box">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Min. 8 characters, 1 letter, 1 number, 1 special character..." >
+                    <p class="error" ></p>
+                   
+                </div>
+
+                <div class="box">
+                    <label for="password_2">Confirm password</label>
+                    <input type="password" name="password_2" id="password_2" placeholder="Confirm password..." >
+                    <p class="error"></p>
+                    
+                </div>
+
+                <div class="show-password">
+                  <label for="showpsw">Show Password</label>
+                  <input id="showpsw" name="showpsw" type="checkbox"/>
+                </div>
+
+                
+
+                <div>
+                    <button class="submit">Submit</button>
+                    <button class="clear" >Clear</button>
+                </div>
+              </form>
+
+              <div id="overlay">
+                <div id="success-message">
+                 <p>Registration Successful</p> 
+                 <button class="ok">OK</button>
+                </div>
+              </div>
+              
+      </div>
+      
+      
+
+        <script src="main.js"></script>
+    </main>
+
+    <footer>
+        <p>Projekt ZTI, Kacper Mikołajczyk</p>
+    </footer>
+</body>
+</html>
